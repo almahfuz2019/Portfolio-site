@@ -12,8 +12,6 @@ const Contact = () => {
                         {/* <!-- container start --> */}
                         <div class=" ">
                             {/* <!-- header start for large screens --> */}
-
-
                             <section className=''>
                                 {/* <!-- Home page contant start --> */}
                                 <div class=" lg:rounded-2xl bg-[#111111] rounded-md">
@@ -21,7 +19,7 @@ const Contact = () => {
                                         <div class="container px-4 sm:px-5 md:px-10 lg:px-20">
                                             <div class=" py-3 md:py-12">
                                                 <div className="flex items-center ">
-                                                    <h5 className="headline my-5 sm:text-5xl text-3xl font-bold text-white leading-none font"  >
+                                                    <h5 className="headline my-5 sm:text-5xl text-3xl font-bold text-white leading-none font md:mt-2"  >
                                                         Contact Me
 
                                                         {/* <hr  className='text-red-500 bg-yellow-900'/> */}

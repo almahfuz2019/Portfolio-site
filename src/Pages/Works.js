@@ -1,14 +1,12 @@
 import React from 'react';
 import bgImg from "../Images/bg-dark.jpg";
-import { FaRegEye } from 'react-icons/fa';
-import { BiCodeAlt } from "react-icons/bi";
 const Works = () => {
      return (
           <div>
                 <div className='pt-14 ' style={{ backgroundImage: `url(${bgImg})`}}>
               <section className='m-4 my-0 rounded-md p-5 sm:mx-8' style={{backgroundColor:"#111111"}} >
              <div className="flex items-center ">
-             <h5 className="headline my-5 text-3xl sm:text-5xl font-bold text-white leading-none font"> 
+             <h5 className="headline my-5 text-3xl sm:text-5xl font-bold text-white leading-none font md:mt-2"> 
             Projects
           </h5>
           <progress className="progress h-1 sm:w-48 w-20 mt-2 ml-2 sm:ml-5 progress-primary  block" value="100" max="100"></progress>
@@ -26,7 +24,9 @@ const Works = () => {
                 <span className='border py-1 px-2 border-gray-500 text-gray-300 rounded-sm'>#Mongo DB</span>
               </div>
              </section>
-                    <h1 className='h-96 font-extrabold flex items-center justify-center text-4xl text-gray-500'>Under Construction</h1>
+             
+                    <h1 className='h-96 font-extrabold flex items-center justify-center text-4xl text-gray-100 animate-pulse'>Under Construction</h1>
+                
              {/* website start  */}
              {/* <section className="m-4 ">
 	<div className="container mx-auto space-y-4">

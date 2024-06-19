@@ -8,7 +8,7 @@ import freeImg from "../Images/freeimg.PNG";
 import eskillIT from "../Images/eskillIT.PNG";
 import aboutImg from "../Images/aboutImg.jpg";
 import { MdAttachEmail, MdDisplaySettings, MdOutlineDateRange } from 'react-icons/md';
-import { SiTaichigraphics } from "react-icons/si";
+import Marquee from "react-fast-marquee";
 const About = () => {
      return (
           <div className='pt-14' style={{ backgroundImage: `url(${bgImg})`}}>
@@ -17,7 +17,7 @@ const About = () => {
     <div className="px-4 pt-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
 
     <div className="flex items-center ">
-             <h5 className="headline my-5  sm:text-5xl text-3xl font-bold text-white leading-none font"> 
+             <h5 className="headline my-5  sm:text-5xl text-3xl font-bold text-white leading-none font md:mt-2"> 
             About Me
             {/* <hr  className='text-red-500 bg-yellow-900'/> */}
           </h5>
@@ -53,9 +53,14 @@ With a strong understanding of web development concepts such as RESTful APIs and
           <div class="flex">
         <span class="text-oriange  shadow-icon mr-2.5 flex items-center justify-center rounded-md text-2xl w-12 bg-gray-600">
         <BsFillPhoneFill className='text-rose-400'/>
+       
            </span>
              <div class="space-y-1">
-           <p class="text-xs text-gray-200 "> Phone
+           <p class="text-xs text-gray-200 flex items-center"> Phone
+           <span class="relative mx-2 flex h-2 w-2">
+  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+  <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+</span>
            </p>
            <h6 class="font-medium text-white"> +8801787-878743 </h6>
             </div>
@@ -95,10 +100,13 @@ With a strong understanding of web development concepts such as RESTful APIs and
         </div>
         
       </div>
+      
     <h5 className="mt-12 mb-7 text-2xl sm:text-3xl font-bold text-white leading-none">
             What i do!
           </h5>
           <div class="grid grid-cols-1 sm:grid-cols-3  gap-4">
+      
+
           <div class="about-box bg-transparent bg-[#fcf4ff] flex justify-center border-2 border-gray-600 rounded-lg p-4 ">
          
             <div class="space-y-2">
@@ -114,6 +122,7 @@ With a strong understanding of web development concepts such as RESTful APIs and
           <div class="about-box bg-transparent bg-[#fcf4ff] flex justify-center border-2 border-gray-600 rounded-lg p-4 ">
          
             <div class="space-y-2">
+            
            <div className="flex items-center justify-center">
            <MdDisplaySettings class="text-4xl sm:text-7xl  " style={{color:"#c17ceb"}}/>
             </div>
@@ -123,27 +132,18 @@ With a strong understanding of web development concepts such as RESTful APIs and
           adipiscing elit, sed diam euismod volutpat.Lorem ipsum dolor adipiscing elit, sed diam euismod volutpat. </p> */}
              </div>
                  </div>
-          <div class="about-box bg-transparent bg-[#fcf4ff] flex justify-center border-2 border-gray-600 rounded-lg p-4 ">
-         
-            <div class="space-y-2">
-           <div className="flex items-center justify-center">
-           <SiTaichigraphics class="text-4xl sm:text-7xl " style={{color:"#c17ceb"}}/>
-            </div>
-            <h3 class="text-xl sm:text-2xl font-semibold text-white text-center"> 
-            Graphic  Design </h3>
-            {/* <p class="leading-8 text-gray-200 text-center "> Lorem ipsum dolor
-          adipiscing elit, sed diam euismod volutpat.Lorem ipsum dolor adipiscing elit, sed diam euismod volutpat. </p> */}
-             </div>
-                 </div>
+                
           </div>
               <div className='py-5 mt-10 px-2 rounded-md' style={{backgroundColor:"black"}}>
-<h1 className='text-center text-xl sm:text-3xl  font-bold text-white mb-10'>Clients<hr/></h1>
+<h1 className='text-center text-xl sm:text-3xl  font-bold text-white '>Clients</h1>
+<progress className="progress  w-full text-white mt-3 mb-5 h-1 bg-gray-300"></progress>
 
 <div className="relative w-full flex gap-4  overflow-x-auto">
-	<img className="h-48 aspect-video rounded-sm  " src={chaayasurgical} alt="Image 1" />
-	<img className="h-48 aspect-video rounded-sm  " src={freeImg} alt="Image 2" />
-	<img className="h-48 aspect-video rounded-sm  " src={eskillIT} alt="Image 3" />
-	
+<Marquee>
+	<img className="h-48 aspect-video rounded-sm mr-5  " src={chaayasurgical} alt="Image 1" />
+	<img className="h-48 aspect-video rounded-sm mr-5 " src={freeImg} alt="Image 2" />
+	<img className="h-48 aspect-video rounded-sm  mr-5" src={eskillIT} alt="Image 3" />
+  </Marquee>
 </div>
               </div>
               <p className='text-center text-gray-400 mt-4 text-xs sm:text-xl pb-4'>© 2023 All Rights Reserved by <span className='font-bold underline'>AL MAHFUZ.</span></p>

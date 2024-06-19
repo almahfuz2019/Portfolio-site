@@ -17,9 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300;1,400&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-   
     <title>AL MAHFUZ</title>
   </head>
   <body style="font-family: 'Poppins', sans-serif;
@@ -32,7 +30,6 @@
     return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
   }
   document.onkeydown = (e) => {
-    // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
     if (
       event.keyCode === 123 ||
       ctrlShiftKey(e, 'I') ||

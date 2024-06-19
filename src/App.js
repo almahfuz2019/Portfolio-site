@@ -8,8 +8,6 @@ import Resume from './Components/Resume';
 import Contact from './Pages/Contact';
 import Works from './Pages/Works';
 import NabbarForMabail from './Components/NavbarForMobail';
-
-
 function App() {
   return (
     <div>
@@ -25,5 +23,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
